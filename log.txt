@@ -1,0 +1,18 @@
+ERntityler Domainde Oluturduk Kalýtým Aldýk 
+Application içerisinde Abstractions da interface oluþtur
+Bu oluþan interface vt ile alakalý ise Persistence da somutu eðilse Infrasture de somutu oluþturulur,
+
+
+Controller =>Api Empty Controller : ProductsController.cs created
+
+ServiceRegistration IOC CONTAINER 
+BUNU 
+ýserviceCollection parametesi ver IOC DE O ÞEKÝLDE OLDUÐU ÝÇÝN VE ÞU PAKETÝ YÜKLE
+using Microsoft.Extensions.DependencyInjection;
+
+Domain Ve Application Katmanlarý Core KlaSÖRÜ Ýçerisinde Oluþturulur. Çekirdek YaPI Olduklarý için Gelenek Bu Þekildedir.
+Servislerimizi Oluþturduðumuz Katmanlar Olan Infrastructure Ve Persi.  Katmanlarý inf. Klasoru Ýçerisinde Oluþturulur.
+Srevislerle Ýlgili AltYapý Burada Oluþturulur.
+
+Presantatiomn Uygulamalarý is Presentation içerisinde Oluþturulur.Class Library den ziyade Api tarzýnda projeler barýndýrabilir.
+
