@@ -16,3 +16,9 @@ Srevislerle Ýlgili AltYapý Burada Oluþturulur.
 
 Presantatiomn Uygulamalarý is Presentation içerisinde Oluþturulur.Class Library den ziyade Api tarzýnda projeler barýndýrabilir.
 
+----------------------------------------------------------------------------------------------------------
+Product					 Orders					 Customers					CrossTable Oto oluþacak 
+Orders(n-n)				Product(n-n)			Orders(1-n)								
+						Customers(n-1)	
+----------------------------------------------------------------------------------------------------------
+EfCore Paketleri Persistence ye kurarýz

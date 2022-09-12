@@ -13,18 +13,19 @@ namespace Domain.Entities
         {
 
         }
-        public Product(string name, int stock, decimal price, string description) : this()
+        public Product(string name, int stock, decimal price) : this()
         {
             Name = name;
             Stock = stock;
             Price = price;
-            Description = description;
         }
 
         public string Name { get; set; }
         public int Stock { get; set; }
         public decimal Price { get; set; }
-        public string Description { get; set; }
+
+        public ICollection<Order> Order { get; set; }
+
     }
 }
 

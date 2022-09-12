@@ -1,6 +1,9 @@
 ﻿using Application.Abstractions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Persistence.Concretes;
+using Persistence.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +16,10 @@ namespace Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
-            services.AddSingleton<IProductService, ProductManager>(); //Bu Talep GELİRSE BUNU VER
+            services.AddSingleton<IProductService, InProductManager>(); //Bu Talep GELİRSE BUNU VER
+
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer
+            ("Server=BYNDR\\PIPLE;Database=Ebook;User Id=dw;Password=Perkon123456;"));
         }
 
     }
