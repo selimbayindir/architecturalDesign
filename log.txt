@@ -22,3 +22,7 @@ Orders(n-n)				Product(n-n)			Orders(1-n)
 						Customers(n-1)	
 ----------------------------------------------------------------------------------------------------------
 EfCore Paketleri Persistence ye kurarýz
+
+appsettings.json Connection String Reader
+Configuration
+Configuration.JSON differen area

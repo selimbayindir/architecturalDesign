@@ -19,7 +19,7 @@ namespace Persistence
             services.AddSingleton<IProductService, InProductManager>(); //Bu Talep GELİRSE BUNU VER
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer
-            ("Server=BYNDR\\PIPLE;Database=Ebook;User Id=dw;Password=Perkon123456;"));
+            (Configuration.con));
         }
 
     }
